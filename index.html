@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<script src="http://localhost:35729/livereload.js"></script> <!--plugin allows automatic update-->
+		<link rel="stylesheet" type="text/css" href="index.css"/> <!--stylesheet link-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jquery-->
+		<script src="index.js"></script> <!--javascript link-->
+		<title>Title</title>
+	</head>
+
+	<body>
+		<main>
+			<h1>Problem 2: People in a Group</h1>
+
+			<section class="all">
+				<h2>Group:</h2>
+				<p id="groupList"></p>
+				<p id="ave"></p>
+				<p id="youngDet"></p>
+				<p id="oldDet"></p>
+			</section>
+
+			<hr>
+			<section class="individual">
+				<h2>Search an individual:</h2>
+				<form id="individ">
+					Enter a name from group: <input type="text" id="name" placeholder="e.g. Adam" required><br>
+				</form>
+			 	<button onclick="findIndiv()">Get Details</button>
+				<p id="indivDet"><p>
+			</section>
+
+			<hr>
+			<section class="add">
+				<h2>Add a person:</h2>
+				<form id="addPerson">
+					Name: <input type="text" id="name" placeholder="e.g. Adam" required><br>
+					Age: <input type="number" id="name" placeholder="e.g. 20" required><br>
+				</form>
+				<button onclick="addPerson()">Add Person</button>
+			</section>
+
+		</main>
+	</body>
+
+</html>
